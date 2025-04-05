@@ -1,0 +1,14 @@
+/Users/leonidmarkevic/Desktop/C#/graeham/bin/Debug/net8.0/graeham
+/Users/leonidmarkevic/Desktop/C#/graeham/bin/Debug/net8.0/graeham.deps.json
+/Users/leonidmarkevic/Desktop/C#/graeham/bin/Debug/net8.0/graeham.runtimeconfig.json
+/Users/leonidmarkevic/Desktop/C#/graeham/bin/Debug/net8.0/graeham.dll
+/Users/leonidmarkevic/Desktop/C#/graeham/bin/Debug/net8.0/graeham.pdb
+/Users/leonidmarkevic/Desktop/C#/graeham/obj/Debug/net8.0/graeham.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonidmarkevic/Desktop/C#/graeham/obj/Debug/net8.0/graeham.AssemblyInfoInputs.cache
+/Users/leonidmarkevic/Desktop/C#/graeham/obj/Debug/net8.0/graeham.AssemblyInfo.cs
+/Users/leonidmarkevic/Desktop/C#/graeham/obj/Debug/net8.0/graeham.csproj.CoreCompileInputs.cache
+/Users/leonidmarkevic/Desktop/C#/graeham/obj/Debug/net8.0/graeham.dll
+/Users/leonidmarkevic/Desktop/C#/graeham/obj/Debug/net8.0/refint/graeham.dll
+/Users/leonidmarkevic/Desktop/C#/graeham/obj/Debug/net8.0/graeham.pdb
+/Users/leonidmarkevic/Desktop/C#/graeham/obj/Debug/net8.0/graeham.genruntimeconfig.cache
+/Users/leonidmarkevic/Desktop/C#/graeham/obj/Debug/net8.0/ref/graeham.dll

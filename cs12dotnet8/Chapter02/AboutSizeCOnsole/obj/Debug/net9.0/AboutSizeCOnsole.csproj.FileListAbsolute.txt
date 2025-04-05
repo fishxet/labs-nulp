@@ -1,0 +1,14 @@
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter02/AboutSizeCOnsole/bin/Debug/net9.0/AboutSizeCOnsole
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter02/AboutSizeCOnsole/bin/Debug/net9.0/AboutSizeCOnsole.deps.json
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter02/AboutSizeCOnsole/bin/Debug/net9.0/AboutSizeCOnsole.runtimeconfig.json
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter02/AboutSizeCOnsole/bin/Debug/net9.0/AboutSizeCOnsole.dll
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter02/AboutSizeCOnsole/bin/Debug/net9.0/AboutSizeCOnsole.pdb
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter02/AboutSizeCOnsole/obj/Debug/net9.0/AboutSizeCOnsole.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter02/AboutSizeCOnsole/obj/Debug/net9.0/AboutSizeCOnsole.AssemblyInfoInputs.cache
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter02/AboutSizeCOnsole/obj/Debug/net9.0/AboutSizeCOnsole.AssemblyInfo.cs
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter02/AboutSizeCOnsole/obj/Debug/net9.0/AboutSizeCOnsole.csproj.CoreCompileInputs.cache
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter02/AboutSizeCOnsole/obj/Debug/net9.0/AboutSizeCOnsole.dll
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter02/AboutSizeCOnsole/obj/Debug/net9.0/refint/AboutSizeCOnsole.dll
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter02/AboutSizeCOnsole/obj/Debug/net9.0/AboutSizeCOnsole.pdb
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter02/AboutSizeCOnsole/obj/Debug/net9.0/AboutSizeCOnsole.genruntimeconfig.cache
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter02/AboutSizeCOnsole/obj/Debug/net9.0/ref/AboutSizeCOnsole.dll

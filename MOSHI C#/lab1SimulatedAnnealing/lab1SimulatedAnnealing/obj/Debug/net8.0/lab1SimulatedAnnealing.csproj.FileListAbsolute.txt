@@ -1,0 +1,14 @@
+/Users/leonidmarkevic/Desktop/MOSHI C#/lab1SimulatedAnnealing/lab1SimulatedAnnealing/bin/Debug/net8.0/lab1SimulatedAnnealing
+/Users/leonidmarkevic/Desktop/MOSHI C#/lab1SimulatedAnnealing/lab1SimulatedAnnealing/bin/Debug/net8.0/lab1SimulatedAnnealing.deps.json
+/Users/leonidmarkevic/Desktop/MOSHI C#/lab1SimulatedAnnealing/lab1SimulatedAnnealing/bin/Debug/net8.0/lab1SimulatedAnnealing.runtimeconfig.json
+/Users/leonidmarkevic/Desktop/MOSHI C#/lab1SimulatedAnnealing/lab1SimulatedAnnealing/bin/Debug/net8.0/lab1SimulatedAnnealing.dll
+/Users/leonidmarkevic/Desktop/MOSHI C#/lab1SimulatedAnnealing/lab1SimulatedAnnealing/bin/Debug/net8.0/lab1SimulatedAnnealing.pdb
+/Users/leonidmarkevic/Desktop/MOSHI C#/lab1SimulatedAnnealing/lab1SimulatedAnnealing/obj/Debug/net8.0/lab1SimulatedAnnealing.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonidmarkevic/Desktop/MOSHI C#/lab1SimulatedAnnealing/lab1SimulatedAnnealing/obj/Debug/net8.0/lab1SimulatedAnnealing.AssemblyInfoInputs.cache
+/Users/leonidmarkevic/Desktop/MOSHI C#/lab1SimulatedAnnealing/lab1SimulatedAnnealing/obj/Debug/net8.0/lab1SimulatedAnnealing.AssemblyInfo.cs
+/Users/leonidmarkevic/Desktop/MOSHI C#/lab1SimulatedAnnealing/lab1SimulatedAnnealing/obj/Debug/net8.0/lab1SimulatedAnnealing.csproj.CoreCompileInputs.cache
+/Users/leonidmarkevic/Desktop/MOSHI C#/lab1SimulatedAnnealing/lab1SimulatedAnnealing/obj/Debug/net8.0/lab1SimulatedAnnealing.dll
+/Users/leonidmarkevic/Desktop/MOSHI C#/lab1SimulatedAnnealing/lab1SimulatedAnnealing/obj/Debug/net8.0/refint/lab1SimulatedAnnealing.dll
+/Users/leonidmarkevic/Desktop/MOSHI C#/lab1SimulatedAnnealing/lab1SimulatedAnnealing/obj/Debug/net8.0/lab1SimulatedAnnealing.pdb
+/Users/leonidmarkevic/Desktop/MOSHI C#/lab1SimulatedAnnealing/lab1SimulatedAnnealing/obj/Debug/net8.0/lab1SimulatedAnnealing.genruntimeconfig.cache
+/Users/leonidmarkevic/Desktop/MOSHI C#/lab1SimulatedAnnealing/lab1SimulatedAnnealing/obj/Debug/net8.0/ref/lab1SimulatedAnnealing.dll

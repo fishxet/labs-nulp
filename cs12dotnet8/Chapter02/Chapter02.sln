@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AboutSize", "AboutSize\AboutSize.csproj", "{00FAAD0B-5C1B-4776-A53C-625B95927789}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AboutSizeCOnsole", "AboutSizeCOnsole\AboutSizeCOnsole.csproj", "{C9FEB000-296E-4989-8B20-3DAF800CCCF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExploreLogicalOperators", "ExploreLogicalOperators\ExploreLogicalOperators.csproj", "{02D96035-B6E9-4A62-874D-8AF00551799B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00FAAD0B-5C1B-4776-A53C-625B95927789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00FAAD0B-5C1B-4776-A53C-625B95927789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00FAAD0B-5C1B-4776-A53C-625B95927789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00FAAD0B-5C1B-4776-A53C-625B95927789}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9FEB000-296E-4989-8B20-3DAF800CCCF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9FEB000-296E-4989-8B20-3DAF800CCCF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9FEB000-296E-4989-8B20-3DAF800CCCF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9FEB000-296E-4989-8B20-3DAF800CCCF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02D96035-B6E9-4A62-874D-8AF00551799B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02D96035-B6E9-4A62-874D-8AF00551799B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02D96035-B6E9-4A62-874D-8AF00551799B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02D96035-B6E9-4A62-874D-8AF00551799B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

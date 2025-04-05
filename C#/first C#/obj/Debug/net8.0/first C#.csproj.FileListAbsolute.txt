@@ -1,0 +1,18 @@
+/Users/leonidmarkevic/Desktop/C#/first C#/bin/Debug/net8.0/first C#
+/Users/leonidmarkevic/Desktop/C#/first C#/bin/Debug/net8.0/first C#.deps.json
+/Users/leonidmarkevic/Desktop/C#/first C#/bin/Debug/net8.0/first C#.runtimeconfig.json
+/Users/leonidmarkevic/Desktop/C#/first C#/bin/Debug/net8.0/first C#.dll
+/Users/leonidmarkevic/Desktop/C#/first C#/bin/Debug/net8.0/first C#.pdb
+/Users/leonidmarkevic/Desktop/C#/first C#/obj/Debug/net8.0/first C#.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonidmarkevic/Desktop/C#/first C#/obj/Debug/net8.0/first C#.AssemblyInfoInputs.cache
+/Users/leonidmarkevic/Desktop/C#/first C#/obj/Debug/net8.0/first C#.AssemblyInfo.cs
+/Users/leonidmarkevic/Desktop/C#/first C#/obj/Debug/net8.0/first C#.csproj.CoreCompileInputs.cache
+/Users/leonidmarkevic/Desktop/C#/first C#/obj/Debug/net8.0/first C#.dll
+/Users/leonidmarkevic/Desktop/C#/first C#/obj/Debug/net8.0/refint/first C#.dll
+/Users/leonidmarkevic/Desktop/C#/first C#/obj/Debug/net8.0/first C#.pdb
+/Users/leonidmarkevic/Desktop/C#/first C#/obj/Debug/net8.0/first C#.genruntimeconfig.cache
+/Users/leonidmarkevic/Desktop/C#/first C#/obj/Debug/net8.0/ref/first C#.dll
+/Users/leonidmarkevic/Desktop/C#/first C#/obj/Debug/net8.0/first C#.csproj.AssemblyReference.cache
+/Users/leonidmarkevic/Desktop/C#/first C#/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/leonidmarkevic/Desktop/C#/first C#/bin/Debug/net8.0/Telegram.Bot.dll
+/Users/leonidmarkevic/Desktop/C#/first C#/obj/Debug/net8.0/first C#.csproj.Up2Date

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "first C#", "first C#\first C#.csproj", "{FFF7D322-19B9-4DA1-84C4-86244A72B01D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "graeham", "graeham\graeham.csproj", "{8461D80D-46BE-475D-9097-B69FC059F333}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFF7D322-19B9-4DA1-84C4-86244A72B01D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF7D322-19B9-4DA1-84C4-86244A72B01D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF7D322-19B9-4DA1-84C4-86244A72B01D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF7D322-19B9-4DA1-84C4-86244A72B01D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8461D80D-46BE-475D-9097-B69FC059F333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8461D80D-46BE-475D-9097-B69FC059F333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8461D80D-46BE-475D-9097-B69FC059F333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8461D80D-46BE-475D-9097-B69FC059F333}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FACE8DC1-8E34-423C-B80C-E97DB6F60E27}
+	EndGlobalSection
+EndGlobal

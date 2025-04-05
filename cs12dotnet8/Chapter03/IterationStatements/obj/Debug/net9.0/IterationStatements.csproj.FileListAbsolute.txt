@@ -1,0 +1,14 @@
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter03/IterationStatements/bin/Debug/net9.0/IterationStatements
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter03/IterationStatements/bin/Debug/net9.0/IterationStatements.deps.json
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter03/IterationStatements/bin/Debug/net9.0/IterationStatements.runtimeconfig.json
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter03/IterationStatements/bin/Debug/net9.0/IterationStatements.dll
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter03/IterationStatements/bin/Debug/net9.0/IterationStatements.pdb
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter03/IterationStatements/obj/Debug/net9.0/IterationStatements.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter03/IterationStatements/obj/Debug/net9.0/IterationStatements.AssemblyInfoInputs.cache
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter03/IterationStatements/obj/Debug/net9.0/IterationStatements.AssemblyInfo.cs
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter03/IterationStatements/obj/Debug/net9.0/IterationStatements.csproj.CoreCompileInputs.cache
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter03/IterationStatements/obj/Debug/net9.0/IterationStatements.dll
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter03/IterationStatements/obj/Debug/net9.0/refint/IterationStatements.dll
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter03/IterationStatements/obj/Debug/net9.0/IterationStatements.pdb
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter03/IterationStatements/obj/Debug/net9.0/IterationStatements.genruntimeconfig.cache
+/Users/leonidmarkevic/Desktop/cs12dotnet8/Chapter03/IterationStatements/obj/Debug/net9.0/ref/IterationStatements.dll
