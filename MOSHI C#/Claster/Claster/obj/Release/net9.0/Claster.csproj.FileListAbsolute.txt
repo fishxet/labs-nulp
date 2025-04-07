@@ -1,0 +1,6 @@
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/obj/Release/net9.0/Claster.csproj.AssemblyReference.cache
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/obj/Release/net9.0/Claster.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/obj/Release/net9.0/Claster.AssemblyInfoInputs.cache
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/obj/Release/net9.0/Claster.AssemblyInfo.cs
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/obj/Release/net9.0/Claster.csproj.CoreCompileInputs.cache
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/obj/Release/net9.0/Claster.sourcelink.json

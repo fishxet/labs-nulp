@@ -28,3 +28,16 @@
 /Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/obj/Debug/net9.0/Claster.pdb
 /Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/obj/Debug/net9.0/Claster.genruntimeconfig.cache
 /Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/obj/Debug/net9.0/ref/Claster.dll
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/bin/Debug/net9.0/MathNet.Numerics.dll
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/bin/Debug/net9.0/Accord.dll.config
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/bin/Debug/net9.0/Accord.dll
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/bin/Debug/net9.0/Accord.MachineLearning.dll
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/bin/Debug/net9.0/Accord.Math.Core.dll
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/bin/Debug/net9.0/Accord.Math.dll
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/bin/Debug/net9.0/Accord.Statistics.dll
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/bin/Debug/net9.0/Microsoft.Win32.SystemEvents.dll
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/bin/Debug/net9.0/ScottPlot.dll
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/bin/Debug/net9.0/System.Drawing.Common.dll
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/bin/Debug/net9.0/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/bin/Debug/net9.0/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll
+/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/bin/Debug/net9.0/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll

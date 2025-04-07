@@ -44,6 +44,18 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Accord.MachineLearning": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "Accord.Statistics": {
+              "target": "Package",
+              "version": "[3.8.0, )"
+            },
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "OxyPlot.Core": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -51,6 +63,10 @@
             "OxyPlot.SkiaSharp": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "ScottPlot": {
+              "target": "Package",
+              "version": "[4.1.38, )"
             }
           },
           "imports": [
