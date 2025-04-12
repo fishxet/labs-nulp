@@ -1,189 +1,137 @@
 #include <iostream>
-#include <fstream>
-#include <pthread.h>    // Бібліотека для роботи з потоками POSIX
-#include <vector>
-#include <thread>       // Для std::this_thread
-#include <chrono>       // Для роботи з часом
+#include <pthread.h>
+#include <unistd.h>
+#include <cstdlib>
 
-// Константи програми
-const int MAX_NUM = 500;                // Максимальне число (додатнє/від'ємне)
-const std::string OUTPUT_FILE = "output.txt";  // Ім'я вихідного файлу
+pthread_mutex_t criticalSection;
+pthread_mutex_t syncSection;
+pthread_cond_t turnCond = PTHREAD_COND_INITIALIZER;
 
-// Структура для передачі параметрів у потік
-struct ThreadParams {
-    std::ofstream* output;   // Вказівник на файловий потік для запису
-    int pair_id;             // Ідентифікатор пари потоків
-    bool is_positive;        // Чи виводити додатні числа (true - додатні, false - від'ємні)
-    bool use_event;          // Чи чекати на подію перед початком роботи
-    bool use_critical;       // Чи використовувати критичну секцію
-};
+int counterPositive = 1;
+int counterNegative = -1;
 
-// Глобальні змінні для синхронізації (ініціалізуються стандартними значеннями)
-pthread_mutex_t file_mutex = PTHREAD_MUTEX_INITIALIZER;      // М'ютекс для захисту запису у файл
-pthread_mutex_t event_mutex = PTHREAD_MUTEX_INITIALIZER;     // М'ютекс для подій
-pthread_cond_t event_cv = PTHREAD_COND_INITIALIZER;          // Умовна змінна для подій
-pthread_mutex_t critical_mutex = PTHREAD_MUTEX_INITIALIZER;  // М'ютекс для критичної секції
-pthread_cond_t critical_cv = PTHREAD_COND_INITIALIZER;       // Умовна змінна для критичної секції
-int active_threads = 0;                  // Лічильник активних потоків у критичній секції
-const int MAX_ACTIVE_THREADS = 2;        // Максимум потоків у критичній секції
-bool event_triggered = false;            // Прапорець події
+bool isPositiveTurn = false;
 
-// Функція для керування критичною секцією
-void manage_critical_section(bool acquire) {
-    // Захоплюємо м'ютекс критичної секції
-    pthread_mutex_lock(&critical_mutex);
-    
-    if (acquire) {
-        // Якщо потрібно увійти в критичну секцію
-        while (active_threads >= MAX_ACTIVE_THREADS) {
-            // Чекаємо, поки кількість потоків у секції не зменшиться
-            pthread_cond_wait(&critical_cv, &critical_mutex);
+void* PrintPositiveNumbers(void* arg) {
+    int threadId = *(int*)arg;
+    while (counterPositive <= 500) {
+        if (rand() % 2 == 0) {
+            std::cout << counterPositive << " ";
+            counterPositive++;
         }
-        active_threads++;  // Збільшуємо лічильник активних потоків
-    } else {
-        // Якщо потрібно вийти з критичної секції
-        active_threads--;  // Зменшуємо лічильник
-        // Сповіщаємо один з очікуючих потоків
-        pthread_cond_signal(&critical_cv);
+        usleep(100);  // 100 мікросекунд
     }
-    
-    // Звільняємо м'ютекс
-    pthread_mutex_unlock(&critical_mutex);
+    std::cout << "\n \t Thread " << threadId << " finished working.\n";
+    return nullptr;
 }
 
-// Основна функція потоку
-void* number_writer(void* arg) {
-    // Отримуємо параметри потоку
-    ThreadParams* params = (ThreadParams*)arg;
-    
-    // Обробка події (якщо потрібно)
-    if (params->use_event) {
-        pthread_mutex_lock(&event_mutex);  // Захоплюємо м'ютекс подій
-        while (!event_triggered) {
-            // Чекаємо на подію
-            pthread_cond_wait(&event_cv, &event_mutex);
+void* PrintNegativeNumbers(void* arg) {
+    int threadId = *(int*)arg;
+    while (counterNegative >= -500) {
+        if (rand() % 2 == 0) {
+            std::cout << counterNegative << " ";
+            counterNegative--;
         }
-        pthread_mutex_unlock(&event_mutex);  // Звільняємо м'ютекс
+        usleep(100);
     }
+    std::cout << "\n \t Thread " << threadId << " finished working.\n";
+    return nullptr;
+}
 
-    // Обробка критичної секції (якщо потрібно)
-    if (params->use_critical) {
-        manage_critical_section(true);  // Вхід у критичну секцію
+void* CriticalSectionPositive(void* arg) {
+    int threadId = *(int*)arg;
+    pthread_mutex_lock(&criticalSection);
+    for (int i = 1; i <= 500; i++) {
+        std::cout << i << " ";
+        usleep(100);
     }
+    pthread_mutex_unlock(&criticalSection);
+    std::cout << "\n \t Thread " << threadId << " finished working.\n";
+    return nullptr;
+}
 
-    // Налаштування параметрів циклу в залежності від типу чисел
-    const int start = params->is_positive ? 1 : -1;
-    const int end = params->is_positive ? MAX_NUM : -MAX_NUM;
-    const int step = params->is_positive ? 1 : -1;
-    const char* type = params->is_positive ? "Positive" : "Negative";
-
-    // Основний цикл запису чисел
-    for (int i = start; (params->is_positive ? i <= end : i >= end); i += step) {
-        pthread_mutex_lock(&file_mutex);  // Захоплюємо м'ютекс файлу
-        // Записуємо число у файл
-        *(params->output) << "Pair " << params->pair_id << " (" << type << "): " << i << std::endl;
-        pthread_mutex_unlock(&file_mutex);  // Звільняємо м'ютекс
+void* CriticalSectionNegative(void* arg) {
+    int threadId = *(int*)arg;
+    pthread_mutex_lock(&criticalSection);
+    for (int i = -1; i >= -500; i--) {
+        std::cout << i << " ";
+        usleep(100);
     }
+    pthread_mutex_unlock(&criticalSection);
+    std::cout << "\n \t Thread " << threadId << " finished working.\n";
+    return nullptr;
+}
 
-    // Вихід з критичної секції (якщо потрібно)
-    if (params->use_critical) {
-        manage_critical_section(false);
+void* OneEventPositive(void* arg) {
+    int threadId = *(int*)arg;
+    for (int i = 1; i <= 500; i++) {
+        pthread_mutex_lock(&syncSection);
+        while (!isPositiveTurn) {
+            pthread_cond_wait(&turnCond, &syncSection);
+        }
+        std::cout << i << " ";
+        isPositiveTurn = false;
+        pthread_cond_signal(&turnCond);
+        pthread_mutex_unlock(&syncSection);
+        usleep(100);
     }
+    std::cout << "\n \t Thread " << threadId << " finished working.\n";
+    return nullptr;
+}
 
-    delete params;  // Видаляємо параметри
-    return NULL;    // Завершуємо потік
+void* OneEventNegative(void* arg) {
+    int threadId = *(int*)arg;
+    for (int i = -1; i >= -500; i--) {
+        pthread_mutex_lock(&syncSection);
+        while (isPositiveTurn) {
+            pthread_cond_wait(&turnCond, &syncSection);
+        }
+        std::cout << i << " ";
+        isPositiveTurn = true;
+        pthread_cond_signal(&turnCond);
+        pthread_mutex_unlock(&syncSection);
+        usleep(100);
+    }
+    std::cout << "\n \t Thread " << threadId << " finished working.\n";
+    return nullptr;
 }
 
 int main() {
-    // Відкриваємо файл для запису
-    std::ofstream output(OUTPUT_FILE.c_str());
-    if (!output.is_open()) {
-        std::cerr << "Помилка відкриття файлу!" << std::endl;
-        return 1;
-    }
+    srand(time(nullptr));
 
-    // Вектор ідентифікаторів потоків
-    std::vector<pthread_t> threads(6);
-    
-    // Параметри для кожного з 6 потоків:
-    // Потік 1: додатні числа, без події, без критичної секції
-    ThreadParams* params1 = new ThreadParams();
-    params1->output = &output;
-    params1->pair_id = 1;
-    params1->is_positive = true;
-    params1->use_event = false;
-    params1->use_critical = false;
+    std::cout << "--- Threads 1 and 2 started working ---\n";
 
-    // Потік 2: від'ємні числа, без події, без критичної секції
-    ThreadParams* params2 = new ThreadParams();
-    params2->output = &output;
-    params2->pair_id = 1;
-    params2->is_positive = false;
-    params2->use_event = false;
-    params2->use_critical = false;
+    pthread_t threads[6];
+    int threadIds[6] = {1, 2, 3, 4, 5, 6};
 
-    // Потік 3: додатні числа, з очікуванням події, без критичної секції
-    ThreadParams* params3 = new ThreadParams();
-    params3->output = &output;
-    params3->pair_id = 2;
-    params3->is_positive = true;
-    params3->use_event = true;
-    params3->use_critical = false;
+    // Без синхронізації
+    pthread_create(&threads[0], nullptr, PrintPositiveNumbers, &threadIds[0]);
+    pthread_create(&threads[1], nullptr, PrintNegativeNumbers, &threadIds[1]);
+    pthread_join(threads[0], nullptr);
+    pthread_join(threads[1], nullptr);
 
-    // Потік 4: від'ємні числа, з очікуванням події, без критичної секції
-    ThreadParams* params4 = new ThreadParams();
-    params4->output = &output;
-    params4->pair_id = 2;
-    params4->is_positive = false;
-    params4->use_event = true;
-    params4->use_critical = false;
+    std::cout << "\n \t --- Threads 3 and 4 started working (Event sync) ---\n";
 
-    // Потік 5: додатні числа, без події, з критичною секцією
-    ThreadParams* params5 = new ThreadParams();
-    params5->output = &output;
-    params5->pair_id = 3;
-    params5->is_positive = true;
-    params5->use_event = false;
-    params5->use_critical = true;
+    pthread_mutex_init(&syncSection, nullptr);
+    isPositiveTurn = false;
 
-    // Потік 6: від'ємні числа, без події, з критичною секцією
-    ThreadParams* params6 = new ThreadParams();
-    params6->output = &output;
-    params6->pair_id = 3;
-    params6->is_positive = false;
-    params6->use_event = false;
-    params6->use_critical = true;
+    pthread_create(&threads[2], nullptr, OneEventPositive, &threadIds[2]);
+    pthread_create(&threads[3], nullptr, OneEventNegative, &threadIds[3]);
+    pthread_join(threads[2], nullptr);
+    pthread_join(threads[3], nullptr);
 
-    // Створення потоків
-    pthread_create(&threads[0], NULL, number_writer, params1);
-    pthread_create(&threads[1], NULL, number_writer, params2);
-    pthread_create(&threads[2], NULL, number_writer, params3);
-    pthread_create(&threads[3], NULL, number_writer, params4);
-    pthread_create(&threads[4], NULL, number_writer, params5);
-    pthread_create(&threads[5], NULL, number_writer, params6);
+    std::cout << "\n \t--- Threads 5 and 6 started working (Critical section) ---\n";
 
-    // Затримка 100 мс (0.1 секунди) перед сповіщенням
-    std::this_thread::sleep_for(std::chrono::nanoseconds(100000000));
-    
-    // Сповіщення про подію для потоків, які очікують
-    pthread_mutex_lock(&event_mutex);
-    event_triggered = true;              // Встановлюємо прапорець
-    pthread_cond_broadcast(&event_cv);   // Сповіщаємо всі потоки
-    pthread_mutex_unlock(&event_mutex);
+    pthread_mutex_init(&criticalSection, nullptr);
 
-    // Очікування завершення всіх потоків
-    for (size_t i = 0; i < threads.size(); ++i) {
-        pthread_join(threads[i], NULL);
-    }
+    pthread_create(&threads[4], nullptr, CriticalSectionPositive, &threadIds[4]);
+    pthread_create(&threads[5], nullptr, CriticalSectionNegative, &threadIds[5]);
+    pthread_join(threads[4], nullptr);
+    pthread_join(threads[5], nullptr);
 
-    output.close();  // Закриваємо файл
-    
-    // Знищення об'єктів синхронізації
-    pthread_mutex_destroy(&file_mutex);
-    pthread_mutex_destroy(&event_mutex);
-    pthread_mutex_destroy(&critical_mutex);
-    pthread_cond_destroy(&event_cv);
-    pthread_cond_destroy(&critical_cv);
+    pthread_mutex_destroy(&criticalSection);
+    pthread_mutex_destroy(&syncSection);
 
+    std::cout << "\n\tEnd\n";
     return 0;
 }

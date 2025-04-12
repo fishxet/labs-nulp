@@ -96,6 +96,17 @@
     "ratio": "cpp",
     "sstream": "cpp",
     "variant": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "__split_buffer": "cpp",
+    "charconv": "cpp",
+    "fstream": "cpp",
+    "vector": "cpp",
+    "__hash_table": "cpp",
+    "__node_handle": "cpp",
+    "array": "cpp",
+    "csignal": "cpp",
+    "iomanip": "cpp",
+    "optional": "cpp",
+    "unordered_map": "cpp"
   }
 }
