@@ -1,0 +1,7 @@
+#Ignoring logs
+*.log
+
+#ignoring vscode/idea
+.vscode
+.idea
+matstat5sem
