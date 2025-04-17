@@ -14,10 +14,10 @@ namespace Claster
         static void Main(string[] args)
         {
             // Генерація даних
-            double[][] data = GenerateTestData(9999);
+            double[][] data = GenerateTestData(19999);
             
             // Створення графіка кластерів
-            CreateClusterPlot(data, 3, "KMeansClustering.png");
+            CreateClusterPlot(data, 7, "KMeansClustering.png");
             
             // Створення графіка методу ліктя
             CreateElbowMethodPlot(data, 3, "ElbowMethod.png");
@@ -33,15 +33,15 @@ namespace Claster
             plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Bottom, Title = "X" });
             plotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Title = "Y" });
 
-            OxyColor[] colors = { OxyColors.Blue, OxyColors.AntiqueWhite, OxyColors.Red, OxyColors.Orange };
+            OxyColor[] colors = { OxyColors.Blue, OxyColors.AntiqueWhite, OxyColors.Red, OxyColors.Orange,OxyColors.Orange, OxyColors.Gray };
             
             for (int cluster = 0; cluster < k; cluster++)
             {  
                 var series = new ScatterSeries
                 {
                     MarkerType = MarkerType.Circle,
-                    MarkerSize = 3,
-                    MarkerFill = colors[cluster]
+                    MarkerSize = 2,
+                    MarkerFill = colors[(cluster + k) % colors.Length],
                 };
 
                 foreach (var point in data.Where((p, i) => labels[i] == cluster))
@@ -111,17 +111,22 @@ namespace Claster
             // Генерація даних (без змін)
             var rand = new Random();
             double[][] centers = {
-                new[]{ 0.3, 0.7 },
-                new[]{ 0.7, 0.3 },
-                new[]{ 0.5, 0.5 }
+                new[]{ 0.1, 0.2 },
+                new[]{ 0.2, 0.3 },
+                new[]{ 0.4, 0.5 },
+                new[]{ 0.4, 0.6 },
+                new[]{ 0.1, 0.7 },
+                new[]{ 0.5, 0.2 },
+                new[]{ 0.7, 0.8 },
+                new[]{ 0.8, 0.9}
             };
 
             return Enumerable.Range(0, totalPoints)
                 .Select(i => {
                     var center = centers[rand.Next(centers.Length)];
                     return new[] { 
-                        center[0] + 10 * (rand.NextDouble() - 0.3),
-                        center[1] + -2 * (rand.NextDouble() - 0.3)
+                        center[0] + 1 * (rand.NextDouble() - 0.2),
+                        center[1] + 1 * (rand.NextDouble() - 0.2)
                     };
                 }).ToArray();
         }

@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "EAsmCsriEXE=",
+  "dgSpecHash": "OhGK/8EKDmI=",
   "success": true,
-  "projectFilePath": "B:\\labs-nulp\\MOSHI C#\\MonteCarlo\\MonteCarlo\\MonteCarlo.csproj",
+  "projectFilePath": "/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/MonteCarlo/MonteCarlo/MonteCarlo.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\gggko\\.nuget\\packages\\harfbuzzsharp\\7.3.0.3\\harfbuzzsharp.7.3.0.3.nupkg.sha512",
-    "C:\\Users\\gggko\\.nuget\\packages\\harfbuzzsharp.nativeassets.linux\\7.3.0.3\\harfbuzzsharp.nativeassets.linux.7.3.0.3.nupkg.sha512",
-    "C:\\Users\\gggko\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\7.3.0.3\\harfbuzzsharp.nativeassets.macos.7.3.0.3.nupkg.sha512",
-    "C:\\Users\\gggko\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\7.3.0.3\\harfbuzzsharp.nativeassets.win32.7.3.0.3.nupkg.sha512",
-    "C:\\Users\\gggko\\.nuget\\packages\\scottplot\\5.0.55\\scottplot.5.0.55.nupkg.sha512",
-    "C:\\Users\\gggko\\.nuget\\packages\\skiasharp\\2.88.9\\skiasharp.2.88.9.nupkg.sha512",
-    "C:\\Users\\gggko\\.nuget\\packages\\skiasharp.harfbuzz\\2.88.9\\skiasharp.harfbuzz.2.88.9.nupkg.sha512",
-    "C:\\Users\\gggko\\.nuget\\packages\\skiasharp.nativeassets.linux.nodependencies\\2.88.9\\skiasharp.nativeassets.linux.nodependencies.2.88.9.nupkg.sha512",
-    "C:\\Users\\gggko\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.9\\skiasharp.nativeassets.macos.2.88.9.nupkg.sha512",
-    "C:\\Users\\gggko\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.9\\skiasharp.nativeassets.win32.2.88.9.nupkg.sha512"
+    "/Users/leonidmarkevic/.nuget/packages/harfbuzzsharp/7.3.0.3/harfbuzzsharp.7.3.0.3.nupkg.sha512",
+    "/Users/leonidmarkevic/.nuget/packages/harfbuzzsharp.nativeassets.linux/7.3.0.3/harfbuzzsharp.nativeassets.linux.7.3.0.3.nupkg.sha512",
+    "/Users/leonidmarkevic/.nuget/packages/harfbuzzsharp.nativeassets.macos/7.3.0.3/harfbuzzsharp.nativeassets.macos.7.3.0.3.nupkg.sha512",
+    "/Users/leonidmarkevic/.nuget/packages/harfbuzzsharp.nativeassets.win32/7.3.0.3/harfbuzzsharp.nativeassets.win32.7.3.0.3.nupkg.sha512",
+    "/Users/leonidmarkevic/.nuget/packages/scottplot/5.0.55/scottplot.5.0.55.nupkg.sha512",
+    "/Users/leonidmarkevic/.nuget/packages/skiasharp/2.88.9/skiasharp.2.88.9.nupkg.sha512",
+    "/Users/leonidmarkevic/.nuget/packages/skiasharp.harfbuzz/2.88.9/skiasharp.harfbuzz.2.88.9.nupkg.sha512",
+    "/Users/leonidmarkevic/.nuget/packages/skiasharp.nativeassets.linux.nodependencies/2.88.9/skiasharp.nativeassets.linux.nodependencies.2.88.9.nupkg.sha512",
+    "/Users/leonidmarkevic/.nuget/packages/skiasharp.nativeassets.macos/2.88.9/skiasharp.nativeassets.macos.2.88.9.nupkg.sha512",
+    "/Users/leonidmarkevic/.nuget/packages/skiasharp.nativeassets.win32/2.88.9/skiasharp.nativeassets.win32.2.88.9.nupkg.sha512"
   ],
   "logs": []
 }

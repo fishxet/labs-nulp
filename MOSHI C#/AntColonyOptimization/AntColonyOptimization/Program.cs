@@ -31,23 +31,18 @@ namespace ACO_TSP_Kaleidoscope
             var aco = new AntColonyOptimization(cities, antCount, alpha, beta, evaporation, Q);
             aco.Run(maxIterations);
 
-            // Отримуємо результати
-            var bestRoute = aco.BestRoute;        // послідовність індексів найкращого маршруту
-            double bestDistance = aco.BestLength;   // довжина найкращого маршруту
+            var bestRoute = aco.BestRoute;     
+            double bestDistance = aco.BestLength;   
 
             Console.WriteLine("Найкращий знайдений маршрут (індекси міст):");
             Console.WriteLine(string.Join(" ", bestRoute));
             Console.WriteLine($"Довжина маршруту: {bestDistance:F2}");
 
-            // Генеруємо графічний вивід у стилі "каляйдоскоп"
             PlotKaleidoscopeRoutes(cityCount, bestRoute, "KaleidoscopeRoutes.png");
 
             Console.WriteLine("Готово! Файл KaleidoscopeRoutes.png створено.");
         }
 
-        /// <summary>
-        /// Генерує випадкові координати міст у заданому діапазоні.
-        /// </summary>
         static (double x, double y)[] GenerateCities(int count, int minCoord, int maxCoord)
         {
             Random rand = new Random();
@@ -61,10 +56,6 @@ namespace ACO_TSP_Kaleidoscope
             return cities;
         }
 
-        /// <summary>
-        /// Створює графік-каляйдоскоп на основі оптимального маршруту.
-        /// Міста розташовуються рівномірно по колу, а маршрут повторюється кілька разів з різними обертами.
-        /// </summary>
         static void PlotKaleidoscopeRoutes(int cityCount, int[] route, string fileName)
         {
             // Задаємо радіус кола
@@ -136,10 +127,6 @@ namespace ACO_TSP_Kaleidoscope
             }
         }
     }
-
-    /// <summary>
-    /// Клас, що реалізує мурашиний алгоритм для задачі комівояжера.
-    /// </summary>
     class AntColonyOptimization
     {
         private (double x, double y)[] _cities; // координати міст

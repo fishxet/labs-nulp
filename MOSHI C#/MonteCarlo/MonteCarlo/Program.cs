@@ -14,8 +14,8 @@ class MonteCarloIntegration
 
         // Параметри
         int N = 10000;
-        double a_test = 0, b_test = 1;
-        double a_main = 1, b_main = 2;
+        double a_test = 0, b_test = 2;
+        double a_main = 0, b_main = 2;
         double yMax_test = 1;
         double yMax_main = Math.Exp(4);
 
@@ -68,6 +68,7 @@ class MonteCarloIntegration
 
         // Додавання точок на графік двома окремими шарами
         var underScatter = plt.Add.Scatter(xUnder, yUnder);
+        
         underScatter.Color = ScottPlot.Color.FromHex("#1f77b4"); // Синій
         underScatter.MarkerSize = 3;
 

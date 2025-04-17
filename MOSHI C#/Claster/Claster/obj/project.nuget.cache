@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YYYaSKRZj/U=",
+  "dgSpecHash": "Q0xhQdD0Uqo=",
   "success": true,
-  "projectFilePath": "/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/Claster.csproj",
+  "projectFilePath": "/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/Claster/Claster/Claster.csproj",
   "expectedPackageFiles": [
     "/Users/leonidmarkevic/.nuget/packages/accord/3.8.0/accord.3.8.0.nupkg.sha512",
     "/Users/leonidmarkevic/.nuget/packages/accord.machinelearning/3.8.0/accord.machinelearning.3.8.0.nupkg.sha512",

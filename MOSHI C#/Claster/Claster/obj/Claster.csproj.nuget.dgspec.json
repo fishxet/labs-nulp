@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/Claster.csproj": {}
+    "/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/Claster/Claster/Claster.csproj": {}
   },
   "projects": {
-    "/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/Claster.csproj": {
+    "/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/Claster/Claster/Claster.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/Claster.csproj",
+        "projectUniqueName": "/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/Claster/Claster/Claster.csproj",
         "projectName": "Claster",
-        "projectPath": "/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/Claster.csproj",
+        "projectPath": "/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/Claster/Claster/Claster.csproj",
         "packagesPath": "/Users/leonidmarkevic/.nuget/packages/",
-        "outputPath": "/Users/leonidmarkevic/Desktop/labs/MOSHI C#/Claster/Claster/obj/",
+        "outputPath": "/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/Claster/Claster/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/leonidmarkevic/.nuget/NuGet/NuGet.Config"

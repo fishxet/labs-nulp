@@ -1,0 +1,15 @@
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/bin/Debug/net9.0/lab6
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/bin/Debug/net9.0/lab6.deps.json
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/bin/Debug/net9.0/lab6.runtimeconfig.json
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/bin/Debug/net9.0/lab6.dll
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/bin/Debug/net9.0/lab6.pdb
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/obj/Debug/net9.0/lab6.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/obj/Debug/net9.0/lab6.AssemblyInfoInputs.cache
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/obj/Debug/net9.0/lab6.AssemblyInfo.cs
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/obj/Debug/net9.0/lab6.csproj.CoreCompileInputs.cache
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/obj/Debug/net9.0/lab6.sourcelink.json
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/obj/Debug/net9.0/lab6.dll
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/obj/Debug/net9.0/refint/lab6.dll
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/obj/Debug/net9.0/lab6.pdb
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/obj/Debug/net9.0/lab6.genruntimeconfig.cache
+/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/lab6/lab6/obj/Debug/net9.0/ref/lab6.dll

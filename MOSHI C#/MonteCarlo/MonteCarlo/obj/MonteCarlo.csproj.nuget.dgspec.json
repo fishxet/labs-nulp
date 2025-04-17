@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "B:\\labs-nulp\\MOSHI C#\\MonteCarlo\\MonteCarlo\\MonteCarlo.csproj": {}
+    "/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/MonteCarlo/MonteCarlo/MonteCarlo.csproj": {}
   },
   "projects": {
-    "B:\\labs-nulp\\MOSHI C#\\MonteCarlo\\MonteCarlo\\MonteCarlo.csproj": {
+    "/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/MonteCarlo/MonteCarlo/MonteCarlo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "B:\\labs-nulp\\MOSHI C#\\MonteCarlo\\MonteCarlo\\MonteCarlo.csproj",
+        "projectUniqueName": "/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/MonteCarlo/MonteCarlo/MonteCarlo.csproj",
         "projectName": "MonteCarlo",
-        "projectPath": "B:\\labs-nulp\\MOSHI C#\\MonteCarlo\\MonteCarlo\\MonteCarlo.csproj",
-        "packagesPath": "C:\\Users\\gggko\\.nuget\\packages\\",
-        "outputPath": "B:\\labs-nulp\\MOSHI C#\\MonteCarlo\\MonteCarlo\\obj\\",
+        "projectPath": "/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/MonteCarlo/MonteCarlo/MonteCarlo.csproj",
+        "packagesPath": "/Users/leonidmarkevic/.nuget/packages/",
+        "outputPath": "/Users/leonidmarkevic/Desktop/labs-nulp/MOSHI C#/MonteCarlo/MonteCarlo/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gggko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/leonidmarkevic/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -36,9 +36,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100-rc.1.24452.12/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
