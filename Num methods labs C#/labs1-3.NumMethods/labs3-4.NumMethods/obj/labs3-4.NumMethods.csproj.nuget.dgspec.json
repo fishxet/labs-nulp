@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/leonidmarkevic/Desktop/Num methods labs C#/labs1-3.NumMethods/labs3-4.NumMethods/labs3-4.NumMethods.csproj": {}
+    "/Users/leonidmarkevic/Desktop/labs-nulp/Num methods labs C#/labs1-3.NumMethods/labs3-4.NumMethods/labs3-4.NumMethods.csproj": {}
   },
   "projects": {
-    "/Users/leonidmarkevic/Desktop/Num methods labs C#/labs1-3.NumMethods/labs3-4.NumMethods/labs3-4.NumMethods.csproj": {
+    "/Users/leonidmarkevic/Desktop/labs-nulp/Num methods labs C#/labs1-3.NumMethods/labs3-4.NumMethods/labs3-4.NumMethods.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/leonidmarkevic/Desktop/Num methods labs C#/labs1-3.NumMethods/labs3-4.NumMethods/labs3-4.NumMethods.csproj",
+        "projectUniqueName": "/Users/leonidmarkevic/Desktop/labs-nulp/Num methods labs C#/labs1-3.NumMethods/labs3-4.NumMethods/labs3-4.NumMethods.csproj",
         "projectName": "labs3-4.NumMethods",
-        "projectPath": "/Users/leonidmarkevic/Desktop/Num methods labs C#/labs1-3.NumMethods/labs3-4.NumMethods/labs3-4.NumMethods.csproj",
+        "projectPath": "/Users/leonidmarkevic/Desktop/labs-nulp/Num methods labs C#/labs1-3.NumMethods/labs3-4.NumMethods/labs3-4.NumMethods.csproj",
         "packagesPath": "/Users/leonidmarkevic/.nuget/packages/",
-        "outputPath": "/Users/leonidmarkevic/Desktop/Num methods labs C#/labs1-3.NumMethods/labs3-4.NumMethods/obj/",
+        "outputPath": "/Users/leonidmarkevic/Desktop/labs-nulp/Num methods labs C#/labs1-3.NumMethods/labs3-4.NumMethods/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/leonidmarkevic/.nuget/NuGet/NuGet.Config"
