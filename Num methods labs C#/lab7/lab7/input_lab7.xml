@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IntegrationJob>
+  <FormulaType>1</FormulaType>  <!-- 1 - складена середніх прямокутників -->
+  <A>0.0</A>
+  <B>2.0</B>
+  <Epsilon>1e-5</Epsilon>
+</IntegrationJob>

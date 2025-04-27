@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResultsBatch xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <Values>
+      <Result X="0.335" Y="0.3287663169223115" />
+      <Result X="0.551" Y="0.5235369904637346" />
+      <Result X="0.844" Y="0.7472983011051866" />
+    </Values>
+  </Results>
+  <Results>
+    <Values>
+      <Result X="0.066" Y="1.9804510927439154" />
+      <Result X="0.368" Y="1.4500189570509017" />
+      <Result X="0.623" Y="0.7061890084738014" />
+    </Values>
+  </Results>
+  <Results>
+    <Values>
+      <Result X="0.087" Y="0.19004938298047888" />
+      <Result X="0.441" Y="1.4157263706765613" />
+      <Result X="0.777" Y="3.730347255302527" />
+    </Values>
+  </Results>
+</ResultsBatch>
