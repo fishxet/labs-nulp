@@ -1,0 +1,9 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/leonidmarkevic/Desktop/labs-nulp/Computer networks labs c++/lab5'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _child1, symObjAddr: 0x0, symBinAddr: 0x100003A9C, symSize: 0xC4 }
+  - { offsetInCU: 0x58, offset: 0x58, size: 0x8, addend: 0x0, symName: _child1, symObjAddr: 0x0, symBinAddr: 0x100003A9C, symSize: 0xC4 }
+  - { offsetInCU: 0x8A, offset: 0x8A, size: 0x8, addend: 0x0, symName: _child2, symObjAddr: 0xC4, symBinAddr: 0x100003B60, symSize: 0x124 }
+  - { offsetInCU: 0xBC, offset: 0xBC, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x1E8, symBinAddr: 0x100003C84, symSize: 0x150 }
+...
