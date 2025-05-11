@@ -16,11 +16,19 @@ public abstract class Client {
         this.email = email;
     }
 
-    // Геттери та сеттери
+    // Геттери
     public String getId() { return id; }
     public String getName() { return name; }
     public String getEmail() { return email; }
+
+    // Сеттер для email
     public void setEmail(String email) { this.email = email; }
 
+    // Абстрактний метод
     public abstract double calculatePayment(double amount);
+
+    @Override
+    public String toString() {
+        return String.format("%s (ID: %s, Email: %s)", name, id, email);
+    }
 }

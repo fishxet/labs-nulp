@@ -11,8 +11,16 @@ public class PartnerCompany extends Client {
         this.contractNumber = contractNumber;
     }
 
+    public String getContractNumber() { return contractNumber; }
+    public void setContractNumber(String contractNumber) { this.contractNumber = contractNumber; }
+
     @Override
     public double calculatePayment(double amount) {
-        return amount * 0.85; // Фіксована знижка для партнерів
+        return amount * 0.85;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + String.format(", Тип: Партнер, Договір: %s", contractNumber);
     }
 }

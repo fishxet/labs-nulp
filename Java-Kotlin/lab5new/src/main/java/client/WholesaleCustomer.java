@@ -11,8 +11,16 @@ public class WholesaleCustomer extends Client {
         this.minOrderVolume = minOrderVolume;
     }
 
+    public double getMinOrderVolume() { return minOrderVolume; }
+    public void setMinOrderVolume(double minOrderVolume) { this.minOrderVolume = minOrderVolume; }
+
     @Override
     public double calculatePayment(double amount) {
         return (amount >= minOrderVolume) ? amount * 0.9 : amount;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + String.format(", Тип: Оптовий, Мін. замовлення: $%.2f", minOrderVolume);
     }
 }

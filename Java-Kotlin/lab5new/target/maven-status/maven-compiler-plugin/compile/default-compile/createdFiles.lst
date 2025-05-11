@@ -1,0 +1,11 @@
+ui/MainWindow.class
+ui/MainWindow$1.class
+org/example/Main.class
+client/Client.class
+client/RetailCustomer.class
+ui/AddClientDialog.class
+client/WholesaleCustomer.class
+client/PartnerCompany.class
+data/ClientDataManager$ClientTypeAdapter.class
+data/ClientDataManager.class
+data/ClientDataManager$1.class

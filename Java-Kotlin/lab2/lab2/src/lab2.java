@@ -21,59 +21,60 @@ public class lab2 {
     }
     public static void InequalitySolver() {
         Scanner scanner = new Scanner(System.in);
-        scanner.useLocale(Locale.US); // Крапка замість коми
-        double a = 0, b = 0, c = 0;
-        boolean isValid = false;
+        scanner.useLocale(Locale.US);
+        double a, b, c;
 
-        // Цикл перевірки вводу
-        while (!isValid) {
-            try {
-                System.out.print("Введіть a, b, c (через пробіл): ");
-                a = scanner.nextDouble();
-                b = scanner.nextDouble();
-                c = scanner.nextDouble();
-                isValid = true; // Вихід з циклу
-            } catch (InputMismatchException e) {
-                System.out.println("Помилка: введіть числа у форматі 0.0 (наприклад: -7.6 3.4 11.3)");
-                scanner.nextLine(); // Очистка буфера
-            }
+        try {
+            System.out.print("Введіть a, b, c (через пробіл): ");
+            a = scanner.nextDouble();
+            b = scanner.nextDouble();
+            c = scanner.nextDouble();
+        } catch (InputMismatchException e) {
+            System.out.println("Помилка: некоректний формат чисел.");
+            return;
+        } finally {
+            scanner.close();
         }
 
-        scanner.close();
-
-        // Обчислення дискримінанта
-        double discriminant = (b * b) - (4 * a * c);
-
-        if (discriminant < 0) {
-
-            System.out.printf("x ∈ (-∞; %.2f)%n", a);
-        } else if (discriminant == 0) {
-            double x0 = -b / (2 * a);
-            if (x0 == a) {
-                System.out.println("Розв’язок: ∅ (знаменник дорівнює нулю)");
-            } else if (a < x0) {
-                System.out.printf("x ∈ (-∞; %.2f)%n", a);
-            } else {
-                System.out.printf("x ∈ (-∞; %.2f) ∪ (%.2f; +∞)%n", x0, x0);
-            }
-        } else {
-            double x1 = (-b - Math.sqrt(discriminant)) / (2 * a);
-            double x2 = (-b + Math.sqrt(discriminant)) / (2 * a);
-            if (x1 > x2) { // Перевірка порядку коренів
-                double temp = x1;
-                x1 = x2;
-                x2 = temp;
-            }
-
-            if (a < x1) {
-                System.out.printf("x ∈ (-∞; %.2f) ∪ (%.2f; +∞)%n", a, x2);
-            } else if (a > x2) {
-                System.out.printf("x ∈ (-∞; %.2f) ∪ (%.2f; +∞)%n", x1, x2);
-            } else {
-                System.out.printf("x ∈ (-∞; %.2f) ∪ (%.2f; %.2f)%n", x1, a, x2);
-            }
+        double D = b*b - 4*c;
+        // випадок D<0: знаменник >0 завжди ⇒ x<a
+        if (D < 0) {
+            System.out.printf("Розв’язок: (-∞; %.2f)%n", a);
+            return;
         }
 
+        // знаходимо корені знаменника
+        double sqrtD = Math.sqrt(D);
+        double x1 = (-b - sqrtD) / 2;
+        double x2 = (-b + sqrtD) / 2;
+        if (x1 > x2) { double t = x1; x1 = x2; x2 = t; }
+
+        StringBuilder sol = new StringBuilder();
+        boolean first = true;
+
+        // 1) (-∞, x1): знаменник >0 ⇒ x<a ⇒ x<min(a,x1)
+        double end1 = Math.min(a, x1);
+        // якщо хочемо тільки непорожні інтервали:
+        if (end1 > Double.NEGATIVE_INFINITY) {
+            sol.append(String.format("(-∞; %.2f)", end1));
+            first = false;
+        }
+
+        // 2) (x1, x2): знаменник <0 ⇒ x>a ⇒ x>max(a,x1)
+        double start2 = Math.max(a, x1);
+        if (start2 < x2) {
+            if (!first) sol.append(" ∪ ");
+            sol.append(String.format("(%.2f; %.2f)", start2, x2));
+            first = false;
+        }
+
+        // 3) (x2, +∞): знаменник >0 ⇒ x<a ⇒ x< a ⇒ (x2, a)
+        if (a > x2) {
+            if (!first) sol.append(" ∪ ");
+            sol.append(String.format("(%.2f; %.2f)", x2, a));
+        }
+
+        System.out.println("Розв’язок: " + sol.toString());
     }
     public static void main(String[] args) {
         LessNumber();

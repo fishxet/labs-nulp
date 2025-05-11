@@ -90,7 +90,6 @@ object lab3kot {
         val hx = (b - a) / 7
         val hy = (d - c) / 7
 
-        // Вивід таблиці з форматуванням
         println(
             """
                 

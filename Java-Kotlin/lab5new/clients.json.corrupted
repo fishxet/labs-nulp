@@ -1,0 +1,26 @@
+[
+  {
+    "discount": 0.2,
+    "id": "1",
+    "name": "Leoleo",
+    "email": "leo@gmail.com"
+  },
+  {
+    "minOrderVolume": 999.0,
+    "id": "2",
+    "name": "Hhehehahaha",
+    "email": "ggfha@gmail.com"
+  },
+  {
+    "contractNumber": "667272",
+    "id": "4",
+    "name": "jejej",
+    "email": "123@gmail.com"
+  },
+  {
+    "discount": 0.111,
+    "id": "4",
+    "name": "kkeke",
+    "email": "k1o@gmail.com"
+  }
+]
