@@ -1,0 +1,2 @@
+class lab4kot {
+}
