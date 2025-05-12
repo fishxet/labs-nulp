@@ -1,0 +1,16 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/leonidmarkevic/Desktop/labs-nulp/Computer networks labs c++/lab4'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _producer, symObjAddr: 0x0, symBinAddr: 0x1000036D8, symSize: 0x100 }
+  - { offsetInCU: 0x4D, offset: 0x4D, size: 0x8, addend: 0x0, symName: _N, symBinAddr: 0x100008008, symSize: 0x0 }
+  - { offsetInCU: 0x6E, offset: 0x6E, size: 0x8, addend: 0x0, symName: _M, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x83, offset: 0x83, size: 0x8, addend: 0x0, symName: _a, symBinAddr: 0x100008010, symSize: 0x0 }
+  - { offsetInCU: 0xA4, offset: 0xA4, size: 0x8, addend: 0x0, symName: _b, symBinAddr: 0x100008018, symSize: 0x0 }
+  - { offsetInCU: 0xB9, offset: 0xB9, size: 0x8, addend: 0x0, symName: _c, symBinAddr: 0x100008020, symSize: 0x0 }
+  - { offsetInCU: 0xCE, offset: 0xCE, size: 0x8, addend: 0x0, symName: _fd, symBinAddr: 0x100008028, symSize: 0x0 }
+  - { offsetInCU: 0xEF, offset: 0xEF, size: 0x8, addend: 0x0, symName: _pipe_mutex, symBinAddr: 0x100008030, symSize: 0x0 }
+  - { offsetInCU: 0x143, offset: 0x143, size: 0x8, addend: 0x0, symName: _producer, symObjAddr: 0x0, symBinAddr: 0x1000036D8, symSize: 0x100 }
+  - { offsetInCU: 0x1BF, offset: 0x1BF, size: 0x8, addend: 0x0, symName: _consumer, symObjAddr: 0x100, symBinAddr: 0x1000037D8, symSize: 0x74 }
+  - { offsetInCU: 0x1F5, offset: 0x1F5, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x174, symBinAddr: 0x10000384C, symSize: 0x4FC }
+...

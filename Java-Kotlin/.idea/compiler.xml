@@ -7,7 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="lab5new" />
+        <module name="client-management" />
+        <module name="LR6_Variant8" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lab5new" target="21" />
+      <module name="lab6" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>

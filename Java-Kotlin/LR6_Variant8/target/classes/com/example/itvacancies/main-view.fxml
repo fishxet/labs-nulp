@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.itvacancies.ui.MainController">
+    <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+    <HBox spacing="5">
+        <Label text="Technology:"/>
+        <ComboBox fx:id="techCombo" onAction="#filterByTech" promptText="All"/>
+        <Label text="Company:"/>
+        <ComboBox fx:id="companyCombo" onAction="#filterByCompany" promptText="All"/>
+    </HBox>
+    <ListView fx:id="listVacancies" prefHeight="250"/>
+    <HBox spacing="10">
+        <Button text="Add" onAction="#onAdd"/>
+        <Button text="Edit" onAction="#onEdit"/>
+        <Button text="Delete" onAction="#onDelete"/>
+    </HBox>
+</VBox>
