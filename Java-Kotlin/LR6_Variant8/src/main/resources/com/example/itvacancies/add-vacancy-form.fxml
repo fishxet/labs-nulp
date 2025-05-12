@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane hgap="10" vgap="10" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.itvacancies.ui.AddVacancyController">
+    <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+    <Label text="Company:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="companyField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <Label text="Position:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="positionField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Label text="Technology:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="technologyField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Label text="Requirements:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+    <TextArea fx:id="requirementsArea" prefRowCount="3" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    <Label text="Salary:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <TextField fx:id="salaryField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+    <Button text="Save" onAction="#onSave" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+</GridPane>

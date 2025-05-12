@@ -1,0 +1,7 @@
+com/example/itvacancies/ui/MainController.class
+com/example/itvacancies/App.class
+com/example/itvacancies/data/DataBaseConnector.class
+com/example/itvacancies/model/Vacancy.class
+com/example/itvacancies/ui/AddVacancyController.class
+com/example/itvacancies/data/DataBaseRepository.class
+com/example/itvacancies/data/Repository.class
